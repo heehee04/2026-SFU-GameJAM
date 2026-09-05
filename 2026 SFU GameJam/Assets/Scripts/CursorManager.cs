@@ -7,7 +7,7 @@ public class CursorManager : MonoBehaviour
 
     private void Start()
     {
-        Cursor.setcur
+  
     }
 
 }
