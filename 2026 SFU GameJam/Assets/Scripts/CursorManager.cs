@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class CursorManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Texture2D cursorDefault;
+    [SerializeField] private Vector2 clickPos = Vector2.zero;
+
+    private void Start()
     {
-        
+        Cursor.setcur
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
