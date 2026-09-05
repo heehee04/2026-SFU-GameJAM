@@ -7,6 +7,11 @@ using UnityEngine.Rendering.Universal;
 public class TextInput : MonoBehaviour
 {
     private string text;
+    public Boolean isBoom;
+    public Boolean isSlash;
+    public Boolean isZap;
+    public Boolean isWhoosh;
+    public Boolean isThump;
 
     string[] booms = { "boom", "bam", "pow" };
     
@@ -19,11 +24,11 @@ public class TextInput : MonoBehaviour
     {
         text = s;
 
-        bool isBoom = false;
-        bool isSlash = false;
-        bool isZap = false;
-        bool isWhoosh = false;
-        bool isThump = false;
+        isBoom = false;
+        isSlash = false;
+        isZap = false;
+        isWhoosh = false;
+        isThump = false;
 
         foreach (string boom in booms)
         {
