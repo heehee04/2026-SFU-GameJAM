@@ -19,7 +19,7 @@ public class player : MonoBehaviour
 
     private void Update()
     {
-        if (manager.instance.health <= 1)
+        if (manager.instance.health <= 0)
         {
             //Gameover screen
         }

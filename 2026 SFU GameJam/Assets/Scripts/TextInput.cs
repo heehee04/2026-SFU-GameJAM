@@ -89,12 +89,9 @@ public class TextInput : MonoBehaviour
             if(string.Equals(word, text, StringComparison.OrdinalIgnoreCase))
             {
                 wordIsCorrect = true;
-                SoundEffectManager.Play("Ding");
+                SoundManager.Instance.Play(SoundManager.SoundType.Ding);
                 ChangeToGreen();
                 break;
-            } else
-            {
-                ChangeToBlack();
             }
         }
     }

@@ -54,9 +54,7 @@ public class SpellManager : MonoBehaviour
     void Boom()
     {
         StartCoroutine(SpawnBoom(mouseLoc()));
-
-        SoundEffectManager.Play("Boom");
-
+        SoundManager.Instance.Play(SoundManager.SoundType.Boom);
         checkSpell.isBoom = false;
         checkSpell.ChangeToBlack();
         checkSpell.ResetText();
@@ -64,38 +62,24 @@ public class SpellManager : MonoBehaviour
     void Slash()
     {
         StartCoroutine(SpawnSlash(mouseLoc()));
-
-        SoundEffectManager.Play("Slash");
-
         checkSpell.isSlash = false;
         checkSpell.ChangeToBlack();
     }
     void Zap()
     {
         StartCoroutine(SpawnZap(mouseLoc()));
-
-        SoundEffectManager.Play("Zap");
-
         checkSpell.isZap = false;
         checkSpell.ChangeToBlack();
     }
     void Whoosh()
     {
         StartCoroutine(SpawnWhoosh(spellPos, 1));
-
-        SoundEffectManager.Play("Whoosh");
-
         checkSpell.isWhoosh = false;
         checkSpell.ChangeToBlack();
     }
     void Thump()
     {
-<<<<<<< Updated upstream
         StartCoroutine(SpawnThump(mouseLoc()));
-=======
-        SoundEffectManager.Play("Thump");
-
->>>>>>> Stashed changes
         checkSpell.isThump = false;
         checkSpell.ChangeToBlack();
     }
