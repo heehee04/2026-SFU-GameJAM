@@ -1,7 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
-using System.Collections.Generic;
 
 public class player : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class player : MonoBehaviour
     {
         if (manager.instance.health <= 0)
         {
-            //Gameover screen
+            SceneManager.LoadSceneAsync(2);
         }
     }
 }
