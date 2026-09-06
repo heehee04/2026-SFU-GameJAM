@@ -50,6 +50,7 @@ public class Enemy : MonoBehaviour
     {
         anim.runtimeAnimatorController = animCon[data.spriteType];
         speed = data.speed;
+        gameObject.tag = data.element;
 
     }
 }

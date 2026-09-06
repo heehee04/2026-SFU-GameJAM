@@ -4,6 +4,7 @@ public class CursorManager : MonoBehaviour
 {
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Vector2 clickPos = Vector2.zero;
+
     public TextInput checkSpell;
 
     private void Start()
