@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     bool isAlive;
     public bool isZapped = false;
+    public bool isWhooshed = false;
 
     Rigidbody2D myRigid;
     Animator anim;
@@ -27,6 +28,12 @@ public class Enemy : MonoBehaviour
         if (!isAlive || isZapped)
         {
             myRigid.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (!isAlive || isWhooshed)
+        {
+            myRigid.linearVelocity = -(myRigid.linearVelocity * 1.2f);
             return;
         }
 
@@ -69,5 +76,18 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(2f);
         spriter.color = new Color(1, 1, 1, 1);
         isZapped = false;
+    }
+
+    public void KnockbackEnemy()
+    {
+        Debug.Log("knockbacked");
+        isWhooshed = true;
+        StartCoroutine(WhooshRoutine());
+    }
+
+    private IEnumerator WhooshRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        isWhooshed = false;
     }
 }
