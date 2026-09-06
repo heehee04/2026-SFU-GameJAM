@@ -9,6 +9,8 @@ public class SpellManager : MonoBehaviour
     [SerializeField] GameObject boomAbility;
     [SerializeField] GameObject zapAbility;
     [SerializeField] GameObject whooshAbility;
+    [SerializeField] GameObject thumpAbility;
+    [SerializeField] GameObject slashAbility;
 
     public TextInput checkSpell;
     public Vector2 spellPos;
@@ -58,6 +60,7 @@ public class SpellManager : MonoBehaviour
     }
     void Slash()
     {
+        StartCoroutine(SpawnSlash(mouseLoc()));
         Debug.Log("casted SLASH at " + spellPos);
         checkSpell.isSlash = false;
         checkSpell.ChangeToBlack();
@@ -71,7 +74,10 @@ public class SpellManager : MonoBehaviour
     }
     void Whoosh()
     {
-        StartCoroutine(SpawnWhoosh(spellPos));
+        Vector3 initialScale = new Vector3(0.5f, 0.5f, 0.5f);
+        Vector3 finalScale = new Vector3(5, 5, 5);
+
+        StartCoroutine(SpawnWhoosh(spellPos, 1.5f));
         Debug.Log("casted WHOOSH at " + spellPos);
         checkSpell.isWhoosh = false;
         checkSpell.ChangeToBlack();
@@ -94,6 +100,17 @@ public class SpellManager : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
         Destroy(abil);
     }
+    IEnumerator SpawnSlash(Vector2 roundPos)
+    {
+        GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.5f);
+        Destroy(aoe);
+        GameObject abil = Instantiate(slashAbility, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(abil);
+    }
 
     IEnumerator SpawnZap(Vector2 roundPos)
     {
@@ -107,16 +124,10 @@ public class SpellManager : MonoBehaviour
         Destroy(abil);
     }
 
-    IEnumerator SpawnWhoosh(Vector2 roundPos)
+    IEnumerator SpawnWhoosh(Vector2 roundPos, float time)
     {
-        GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
-
-        yield return new WaitForSeconds(0.7f);
-        Destroy(aoe);
         GameObject abil = Instantiate(whooshAbility, roundPos, Quaternion.identity);
-
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(1.5f);
         Destroy(abil);
-
     }
 }

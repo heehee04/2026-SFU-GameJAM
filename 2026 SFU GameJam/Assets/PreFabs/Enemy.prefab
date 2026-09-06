@@ -137,6 +137,8 @@ MonoBehaviour:
   - {fileID: 9100000, guid: c76c9d6488d3a7c43b76cb2cabe0a80b, type: 2}
   - {fileID: 9100000, guid: f09631898d5b0d242bec18beeee0a769, type: 2}
   - {fileID: 9100000, guid: 528932d1efc419543a62492910716dd2, type: 2}
+  isZapped: 0
+  isWhooshed: 0
 --- !u!50 &1318363416634670274
 Rigidbody2D:
   serializedVersion: 5
@@ -145,7 +147,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6901627669845754340}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

@@ -1869,6 +1869,8 @@ MonoBehaviour:
   boomAbility: {fileID: 8595955679916514148, guid: bfe0d0999b680134182d0c9d768a6b66, type: 3}
   zapAbility: {fileID: 8064431946268345846, guid: ea0049293a29a0744a08d0ff2d865776, type: 3}
   whooshAbility: {fileID: 4734394807606636968, guid: af68d9bdabbca6b41b4a466fabfed217, type: 3}
+  thumpAbility: {fileID: 0}
+  slashAbility: {fileID: 6719343268372711210, guid: f6a67cfb718d3a04b81d2f5f43dfff15, type: 3}
   checkSpell: {fileID: 952841300}
   spellPos: {x: 0, y: 0}
 --- !u!4 &1692309895

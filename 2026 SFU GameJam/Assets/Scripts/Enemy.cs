@@ -31,12 +31,6 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        if (!isAlive || isWhooshed)
-        {
-            myRigid.linearVelocity = -(myRigid.linearVelocity * 1.2f);
-            return;
-        }
-
         Vector2 direction = (targetDestination.position - transform.position).normalized;
         myRigid.linearVelocity = direction * speed;
     }
@@ -76,18 +70,5 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(2f);
         spriter.color = new Color(1, 1, 1, 1);
         isZapped = false;
-    }
-
-    public void KnockbackEnemy()
-    {
-        Debug.Log("knockbacked");
-        isWhooshed = true;
-        StartCoroutine(WhooshRoutine());
-    }
-
-    private IEnumerator WhooshRoutine()
-    {
-        yield return new WaitForSeconds(1f);
-        isWhooshed = false;
     }
 }
