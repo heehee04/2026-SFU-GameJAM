@@ -5,8 +5,10 @@ using UnityEngine.InputSystem;
 
 public class SpellManager : MonoBehaviour
 {
+    [SerializeField] GameObject Range;
     [SerializeField] GameObject boomAbility;
-    [SerializeField] GameObject boomRange;
+    [SerializeField] GameObject zapAbility;
+    [SerializeField] GameObject whooshAbility;
 
     public TextInput checkSpell;
     public Vector2 spellPos;
@@ -52,6 +54,7 @@ public class SpellManager : MonoBehaviour
         StartCoroutine(SpawnAbility(mouseLoc()));
         checkSpell.isBoom = false;
         checkSpell.ChangeToBlack();
+        checkSpell.ResetText();
     }
     void Slash()
     {
@@ -67,6 +70,7 @@ public class SpellManager : MonoBehaviour
     }
     void Whoosh()
     {
+        StartCoroutine(SpawnWhoosh(spellPos));
         Debug.Log("casted WHOOSH at " + spellPos);
         checkSpell.isWhoosh = false;
         checkSpell.ChangeToBlack();
@@ -80,11 +84,35 @@ public class SpellManager : MonoBehaviour
 
     IEnumerator SpawnAbility(Vector2 roundPos)
     {
-        GameObject aoe = Instantiate(boomRange, roundPos, Quaternion.identity);
+        GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
 
         yield return new WaitForSeconds(0.7f);
         Destroy(aoe);
         GameObject abil = Instantiate(boomAbility, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(abil);
+    }
+
+    IEnumerator SpawnZap(Vector2 roundPos)
+    {
+        GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(aoe);
+        GameObject abil = Instantiate(zapAbility, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(abil);
+    }
+
+    IEnumerator SpawnWhoosh(Vector2 roundPos)
+    {
+        GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(aoe);
+        GameObject abil = Instantiate(whooshAbility, roundPos, Quaternion.identity);
 
         yield return new WaitForSeconds(0.7f);
         Destroy(abil);
