@@ -1340,6 +1340,7 @@ MonoBehaviour:
   isZap: 0
   isWhoosh: 0
   isThump: 0
+  targetCursor: {fileID: 2800000, guid: 202130c0bef205240a3e74a0a89d8b65, type: 3}
 --- !u!50 &952841301
 Rigidbody2D:
   serializedVersion: 5
@@ -2496,6 +2497,7 @@ MonoBehaviour:
   slashAbility: {fileID: 6719343268372711210, guid: f6a67cfb718d3a04b81d2f5f43dfff15, type: 3}
   checkSpell: {fileID: 952841300}
   spellPos: {x: 0, y: 0}
+  defaultCursor: {fileID: 2800000, guid: 9546d54b8d93a1346be746996ece3ea1, type: 3}
 --- !u!4 &1692309895
 Transform:
   m_ObjectHideFlags: 0
@@ -2539,11 +2541,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: fea7416e5d8c7f24abd0e401262d463f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.048
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2911,7 +2913,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

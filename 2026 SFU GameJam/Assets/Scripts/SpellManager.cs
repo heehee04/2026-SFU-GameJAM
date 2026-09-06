@@ -12,9 +12,12 @@ public class SpellManager : MonoBehaviour
     [SerializeField] GameObject thumpAbility;
     [SerializeField] GameObject slashAbility;
 
+
     public TextInput checkSpell;
     public Vector2 spellPos;
 
+    [SerializeField] Texture2D defaultCursor;
+    private Vector2 mousePos = Vector2.zero;
     private Vector2 mouseLoc()
     {
         Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -25,6 +28,8 @@ public class SpellManager : MonoBehaviour
     public void OnMouseDown()
     {
         CastSpell();
+        UnityEngine.Cursor.SetCursor(defaultCursor, mousePos, CursorMode.Auto);
+
     }
 
     void CastSpell()
@@ -91,12 +96,14 @@ public class SpellManager : MonoBehaviour
     IEnumerator SpawnBoom(Vector2 roundPos)
     {
         GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
-
+        
         yield return new WaitForSeconds(0.7f);
         Destroy(aoe);
         GameObject abil = Instantiate(boomAbility, roundPos, Quaternion.identity);
 
         yield return new WaitForSeconds(0.7f);
+
+
         Destroy(abil);
     }
     IEnumerator SpawnSlash(Vector2 roundPos)
@@ -119,6 +126,7 @@ public class SpellManager : MonoBehaviour
         GameObject abil = Instantiate(thumpAbility, roundPos, Quaternion.identity);
 
         yield return new WaitForSeconds(0.7f);
+
         Destroy(abil);
     }
 

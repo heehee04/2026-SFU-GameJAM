@@ -28,6 +28,13 @@ public class TextInput : MonoBehaviour
     string[] whooshes = { "whoosh", "woosh" };
     string[] thumps = { "thump", "wham", "wam", "slam" };
 
+
+    [SerializeField] Texture2D targetCursor;
+    private Vector2 mousePos = Vector2.zero;
+
+
+    
+
     public void TextInputCheck(string s)
     {
         text = s;
@@ -88,6 +95,7 @@ public class TextInput : MonoBehaviour
         {
             if(string.Equals(word, text, StringComparison.OrdinalIgnoreCase))
             {
+                UnityEngine.Cursor.SetCursor(targetCursor, mousePos, CursorMode.Auto);
                 wordIsCorrect = true;
                 SoundEffectManager.Play("Ding");
                 ChangeToGreen();
@@ -96,6 +104,7 @@ public class TextInput : MonoBehaviour
             else
             {
                 ChangeToBlack();
+
             }
         }
     }
