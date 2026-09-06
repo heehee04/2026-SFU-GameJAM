@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: e025c4e7b0891904d91b299a4ff6b174
+guid: 988a2eb31913a2a41ab7e87a4bbd90f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1950882361311047726
-    second: bucket sprite_0
+      213: 551034281303994455
+    second: bucket sprite shaded_0
   - first:
-      213: -4086856021993926217
-    second: bucket sprite_1
+      213: -5622762774701425181
+    second: bucket sprite shaded_1
   - first:
-      213: 6251830161201332991
-    second: bucket sprite_2
+      213: -3906208459608115045
+    second: bucket sprite shaded_2
   - first:
-      213: 5981562993177130825
-    second: bucket sprite_3
+      213: -3301272799008444755
+    second: bucket sprite shaded_3
   - first:
-      213: 7332805428236182616
-    second: bucket sprite_4
+      213: 5265157948459778519
+    second: bucket sprite shaded_4
   - first:
-      213: -8598620691344230609
-    second: bucket sprite_5
+      213: -8831018260353168830
+    second: bucket sprite shaded_5
   - first:
-      213: -5561622055383132040
-    second: bucket sprite_6
+      213: 571740378941046177
+    second: bucket sprite shaded_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bucket sprite_0
+      name: bucket sprite shaded_0
       rect:
         serializedVersion: 2
         x: 0
@@ -148,14 +148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2dfca7f14d21de4e0800000000000000
-      internalID: -1950882361311047726
+      spriteID: 750ff2462caa5a700800000000000000
+      internalID: 551034281303994455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bucket sprite_1
+      name: bucket sprite shaded_1
       rect:
         serializedVersion: 2
         x: 64
@@ -170,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b1d2e0e9129847c0800000000000000
-      internalID: -4086856021993926217
+      spriteID: 3edb1ad0c0fe7f1b0800000000000000
+      internalID: -5622762774701425181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bucket sprite_2
+      name: bucket sprite shaded_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff28a727866f2c650800000000000000
-      internalID: 6251830161201332991
+      spriteID: b98be6a1a1c5ac9c0800000000000000
+      internalID: -3906208459608115045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bucket sprite_3
+      name: bucket sprite shaded_3
       rect:
         serializedVersion: 2
         x: 192
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 947f1f1c9d7c20350800000000000000
-      internalID: 5981562993177130825
+      spriteID: dae217451e58f22d0800000000000000
+      internalID: -3301272799008444755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bucket sprite_4
+      name: bucket sprite shaded_4
       rect:
         serializedVersion: 2
         x: 256
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 854e215afab53c560800000000000000
-      internalID: 7332805428236182616
+      spriteID: 7d105441249911940800000000000000
+      internalID: 5265157948459778519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bucket sprite_5
+      name: bucket sprite shaded_5
       rect:
         serializedVersion: 2
         x: 320
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f277a16e9009ba880800000000000000
-      internalID: -8598620691344230609
+      spriteID: 24a49a25eabe17580800000000000000
+      internalID: -8831018260353168830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bucket sprite_6
+      name: bucket sprite shaded_6
       rect:
         serializedVersion: 2
         x: 384
@@ -280,8 +280,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87819e5153621d2b0800000000000000
-      internalID: -5561622055383132040
+      spriteID: 1ad378e68da3fe700800000000000000
+      internalID: 571740378941046177
       vertices: []
       indices: 
       edges: []
@@ -290,7 +290,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e42cf4875dbe3c3479835d675d848243
+    spriteID: 61e73605802942843baadabe9125e596
     internalID: 0
     vertices: []
     indices: 
@@ -302,13 +302,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      bucket sprite_0: -1950882361311047726
-      bucket sprite_1: -4086856021993926217
-      bucket sprite_2: 6251830161201332991
-      bucket sprite_3: 5981562993177130825
-      bucket sprite_4: 7332805428236182616
-      bucket sprite_5: -8598620691344230609
-      bucket sprite_6: -5561622055383132040
+      bucket sprite shaded_0: 551034281303994455
+      bucket sprite shaded_1: -5622762774701425181
+      bucket sprite shaded_2: -3906208459608115045
+      bucket sprite shaded_3: -3301272799008444755
+      bucket sprite shaded_4: 5265157948459778519
+      bucket sprite shaded_5: -8831018260353168830
+      bucket sprite shaded_6: 571740378941046177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
