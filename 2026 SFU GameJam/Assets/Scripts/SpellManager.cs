@@ -51,7 +51,7 @@ public class SpellManager : MonoBehaviour
 
     void Boom()
     {
-        StartCoroutine(SpawnAbility(mouseLoc()));
+        StartCoroutine(SpawnBoom(mouseLoc()));
         checkSpell.isBoom = false;
         checkSpell.ChangeToBlack();
         checkSpell.ResetText();
@@ -64,6 +64,7 @@ public class SpellManager : MonoBehaviour
     }
     void Zap()
     {
+        StartCoroutine(SpawnZap(mouseLoc()));
         Debug.Log("casted ZAP at " + spellPos);
         checkSpell.isZap = false;
         checkSpell.ChangeToBlack();
@@ -82,7 +83,7 @@ public class SpellManager : MonoBehaviour
         checkSpell.ChangeToBlack();
     }
 
-    IEnumerator SpawnAbility(Vector2 roundPos)
+    IEnumerator SpawnBoom(Vector2 roundPos)
     {
         GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
 

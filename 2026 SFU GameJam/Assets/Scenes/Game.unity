@@ -1865,8 +1865,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32be24d9c95010d478a6eddf7da3c326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellManager
+  Range: {fileID: 4050885137987118750, guid: bc9cd108795333b47bb929b7ded7f52b, type: 3}
   boomAbility: {fileID: 8595955679916514148, guid: bfe0d0999b680134182d0c9d768a6b66, type: 3}
-  boomRange: {fileID: 4050885137987118750, guid: bc9cd108795333b47bb929b7ded7f52b, type: 3}
+  zapAbility: {fileID: 8064431946268345846, guid: ea0049293a29a0744a08d0ff2d865776, type: 3}
+  whooshAbility: {fileID: 4734394807606636968, guid: af68d9bdabbca6b41b4a466fabfed217, type: 3}
   checkSpell: {fileID: 952841300}
   spellPos: {x: 0, y: 0}
 --- !u!4 &1692309895
