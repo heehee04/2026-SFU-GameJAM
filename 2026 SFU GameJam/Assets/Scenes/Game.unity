@@ -1400,7 +1400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1240695896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,7 +1800,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1828,6 +1828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32be24d9c95010d478a6eddf7da3c326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellManager
+  boomAbility: {fileID: 8595955679916514148, guid: bfe0d0999b680134182d0c9d768a6b66, type: 3}
+  boomRange: {fileID: 4050885137987118750, guid: bc9cd108795333b47bb929b7ded7f52b, type: 3}
   checkSpell: {fileID: 952841300}
   spellPos: {x: 0, y: 0}
 --- !u!4 &1692309895

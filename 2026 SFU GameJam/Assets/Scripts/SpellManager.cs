@@ -1,11 +1,22 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class SpellManager : MonoBehaviour
 {
+    [SerializeField] GameObject boomAbility;
+    [SerializeField] GameObject boomRange;
+
     public TextInput checkSpell;
     public Vector2 spellPos;
+
+    private Vector2 mouseLoc()
+    {
+        Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
+        return worldPos;
+    }
 
     public void OnMouseDown()
     {
@@ -38,7 +49,7 @@ public class SpellManager : MonoBehaviour
 
     void Boom()
     {
-        Debug.Log("casted BOOM at " + spellPos);
+        StartCoroutine(SpawnAbility(mouseLoc()));
         checkSpell.isBoom = false;
     }
     void Slash()
@@ -60,5 +71,18 @@ public class SpellManager : MonoBehaviour
     {
         Debug.Log("casted THUMP at " + spellPos);
         checkSpell.isThump = false;
+    }
+
+    IEnumerator SpawnAbility(Vector2 roundPos)
+    {
+        GameObject aoe = Instantiate(boomRange, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(aoe);
+        GameObject abil = Instantiate(boomAbility, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(abil);
+
     }
 }
