@@ -91,6 +91,9 @@ public class TextInput : MonoBehaviour
                 wordIsCorrect = true;
                 ChangeToGreen();
                 break;
+            } else
+            {
+                ChangeToBlack();
             }
         }
     }
