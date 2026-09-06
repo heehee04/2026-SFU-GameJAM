@@ -103,7 +103,6 @@ public class SpellManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.7f);
 
-
         Destroy(abil);
     }
     IEnumerator SpawnSlash(Vector2 roundPos)
