@@ -17,5 +17,17 @@ public class detection : MonoBehaviour
                 enemy.ZapEnemy();
             }
         }
+        if (collision.CompareTag("slash") && gameObject.CompareTag("slash"))
+        {
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("boom") && gameObject.CompareTag("boom"))
+        {
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("thump") && gameObject.CompareTag("thump"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
