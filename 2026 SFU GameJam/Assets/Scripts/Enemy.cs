@@ -69,7 +69,7 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator ZapRoutine()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(4.5f);
         spriter.color = new Color(1, 1, 1, 1);
         isZapped = false;
     }

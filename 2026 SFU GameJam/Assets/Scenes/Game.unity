@@ -718,7 +718,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 9b596aaf215caab4d96f7f85ba9818b3, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_KeepTextSelectionVisible: 0
@@ -990,8 +990,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter sound effect...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9b596aaf215caab4d96f7f85ba9818b3, type: 2}
-  m_sharedMaterial: {fileID: -1468265893509534728, guid: 9b596aaf215caab4d96f7f85ba9818b3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1792,18 +1792,18 @@ MonoBehaviour:
   spawnPoints: []
   spawnData:
   - spriteType: 0
-    speed: 1
+    speed: 0.5
     element: general
   - spriteType: 1
-    speed: 1
+    speed: 0.5
     element: slash
   - spriteType: 2
-    speed: 1
+    speed: 0.7
     element: thump
   - spriteType: 3
-    speed: 1
+    speed: 0.8
     element: boom
-  spawnTime: 2.5
+  spawnTime: 2.8
 --- !u!1 &1334465216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,8 +2608,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9b596aaf215caab4d96f7f85ba9818b3, type: 2}
-  m_sharedMaterial: {fileID: -1468265893509534728, guid: 9b596aaf215caab4d96f7f85ba9818b3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
