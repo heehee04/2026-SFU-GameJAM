@@ -14,6 +14,7 @@ public class TextInput : MonoBehaviour
     public Boolean isThump;
 
     string[] booms = { "boom", "bam", "pow" };
+    
     string[] slashes = { "slash", "shing" };
     string[] zaps = { "zap" };
     string[] whooshes = { "whoosh", "woosh" };
@@ -70,25 +71,25 @@ public class TextInput : MonoBehaviour
             }
         }
 
-        //if (isBoom == true)
-        //{
-        //    Debug.Log("casted BOOM");
-        //}
-        //if (isSlash == true)
-        //{
-        //    Debug.Log("casted SLASH");
-        //}
-        //if (isZap == true)
-        //{
-        //    Debug.Log("casted ZAP");
-        //}
-        //if (isWhoosh == true)
-        //{
-        //    Debug.Log("casted WHOOSH");
-        //}
-        //if (isThump == true)
-        //{
-        //    Debug.Log("casted THUMP");
-        //}
+        if (isBoom == true)
+        {
+            Debug.Log("casted BOOM");
+        }
+        if (isSlash == true)
+        {
+            Debug.Log("casted SLASH");
+        }
+        if (isZap == true)
+        {
+            Debug.Log("casted ZAP");
+        }
+        if (isWhoosh == true)
+        {
+            Debug.Log("casted WHOOSH");
+        }
+        if (isThump == true)
+        {
+            Debug.Log("casted THUMP");
+        }
     }
 }

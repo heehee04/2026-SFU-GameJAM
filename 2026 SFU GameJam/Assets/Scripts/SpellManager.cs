@@ -1,54 +1,39 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class SpellManager : MonoBehaviour
 {
-    [SerializeField] private GameObject boomPrefab;
     public TextInput checkSpell;
+    public float spellCooldown;
     public Vector2 spellPos;
+    public float damageRadius = 5;
 
-    void SpellPos()
-    {
-        spellPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-    }
+    public bool CanCast => Time.time >= nextCastTime;
+    private float nextCastTime;
 
-    void Update()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            Vector2 mousePosition = Input.mousePosition;
-            spellPos = mousePosition;
-            CastSpell();
-        }
-    }
-
-    public void CastSpell()
+    void CastSpell()
     {
         if (checkSpell.isBoom == true)
         {
             Boom();
         }
-        if (checkSpell.isBoom == true)
-        {
-            Slash();
-        }
-        if (checkSpell.isBoom == true)
-        {
-            Zap();
-        }
-        if (checkSpell.isBoom == true)
-        {
-            Whoosh();
-        }
-        if (checkSpell.isBoom == true)
-        {
-            Thump();
-        }
     }
 
     void Boom()
     {
-        Debug.Log("casted BOOM");
+        if (!CanCast)
+        {
+            return;
+        }
+
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(spellPos, damageRadius); 
+        
+        foreach (Collider2D enemy in enemies) 
+        {
+            if (enemy.CompareTag("Boom"))
+            {
+                Destroy(enemy);
+            }
+        }
     }
     void Slash()
     {

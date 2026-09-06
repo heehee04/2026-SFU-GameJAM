@@ -23,7 +23,7 @@ public class spawner : MonoBehaviour
 
         //Every certain amount of time, level increases (ex. 0 -> 1 -> 2 every 10 seconds) and caps it at the amount of types of enemies
         level = Mathf.Min(Mathf.FloorToInt(manager.instance.gameTime / 10f), spawnData.Length - 1);
-        //Debug.Log(level);
+        Debug.Log(level);
 
         // Spwan interval
         if (timer > spawnTime)
