@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEditor.Progress;
+using System.Collections.Generic;
 
 public class player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public List<Image> hearts;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        Destroy(hearts[0]);
+        hearts.RemoveAt(0);
+        Destroy(collision.gameObject);
+
     }
 }

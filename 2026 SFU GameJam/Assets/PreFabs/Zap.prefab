@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3412390487349423368}
   - component: {fileID: 1171478550366544792}
   - component: {fileID: 2180703382271647425}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zap
   m_TagString: zap
   m_Icon: {fileID: 0}
