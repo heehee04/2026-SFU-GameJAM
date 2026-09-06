@@ -97,7 +97,7 @@ public class SpellManager : MonoBehaviour
     {
         GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
         
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.3f);
         Destroy(aoe);
         GameObject abil = Instantiate(boomAbility, roundPos, Quaternion.identity);
 
@@ -121,7 +121,7 @@ public class SpellManager : MonoBehaviour
     {
         GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.3f);
         Destroy(aoe);
         GameObject abil = Instantiate(thumpAbility, roundPos, Quaternion.identity);
 
@@ -134,7 +134,7 @@ public class SpellManager : MonoBehaviour
     {
         GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
 
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.3f);
         Destroy(aoe);
         GameObject abil = Instantiate(zapAbility, roundPos, Quaternion.identity);
 
