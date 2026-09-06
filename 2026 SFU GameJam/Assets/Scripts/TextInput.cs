@@ -3,12 +3,13 @@ using System.Collections;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 using UnityEngine.VFX;
 
 public class TextInput : MonoBehaviour
-{
+{   
     [SerializeField] public TMP_Text myTMP;
     
     private string text;
