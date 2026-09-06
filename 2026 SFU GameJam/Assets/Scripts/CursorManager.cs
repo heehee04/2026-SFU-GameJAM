@@ -3,12 +3,12 @@ using UnityEngine;
 public class CursorManager : MonoBehaviour
 {
     [SerializeField] private Texture2D cursorDefault;
+    [SerializeField] private Texture2D cursorSpell;
     [SerializeField] private Vector2 clickPos = Vector2.zero;
     public TextInput checkSpell;
 
     private void Start()
     {
-        //checkSpell.GetComponent<GameObject>();
         Cursor.SetCursor(cursorDefault, clickPos, CursorMode.Auto);
     }
 
@@ -16,7 +16,7 @@ public class CursorManager : MonoBehaviour
     {
         if (checkSpell.isBoom == true)
         {
-            Debug.Log("cursor change");
+            Cursor.SetCursor(cursorSpell, clickPos, CursorMode.Auto);
         }
         if (checkSpell.isSlash == true)
         {
