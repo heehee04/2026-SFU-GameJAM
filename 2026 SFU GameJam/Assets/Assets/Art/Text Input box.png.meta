@@ -1,0 +1,860 @@
+fileFormatVersion: 2
+guid: 29be844032cec5449b9b723105b5446c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3194480409250373555
+    second: Text Input box_0
+  - first:
+      213: 9127737410035937256
+    second: Text Input box_1
+  - first:
+      213: -2512850297272423147
+    second: Text Input box_2
+  - first:
+      213: -135562027619632153
+    second: Text Input box_3
+  - first:
+      213: -4384200234250580557
+    second: Text Input box_4
+  - first:
+      213: -1719598205871897653
+    second: Text Input box_5
+  - first:
+      213: 3069772477969950075
+    second: Text Input box_6
+  - first:
+      213: -3695593340030865461
+    second: Text Input box_7
+  - first:
+      213: 876043848979457
+    second: Text Input box_8
+  - first:
+      213: 4631947489819411956
+    second: Text Input box_9
+  - first:
+      213: 1581554819245909105
+    second: Text Input box_10
+  - first:
+      213: -8108503068856916295
+    second: Text Input box_11
+  - first:
+      213: 8448838776767980131
+    second: Text Input box_12
+  - first:
+      213: -6192236355298531209
+    second: Text Input box_13
+  - first:
+      213: -8700028704984963968
+    second: Text Input box_14
+  - first:
+      213: -3476962752618069046
+    second: Text Input box_15
+  - first:
+      213: 4663323793234578617
+    second: Text Input box_16
+  - first:
+      213: 6412679748543134251
+    second: Text Input box_17
+  - first:
+      213: -2379323174907126945
+    second: Text Input box_18
+  - first:
+      213: -1232404076424572776
+    second: Text Input box_19
+  - first:
+      213: -528478314461305540
+    second: Text Input box_20
+  - first:
+      213: 8451676745352493531
+    second: Text Input box_21
+  - first:
+      213: -1092641457825107961
+    second: Text Input box_22
+  - first:
+      213: -1927552945178304496
+    second: Text Input box_23
+  - first:
+      213: 7574790232897035766
+    second: Text Input box_24
+  - first:
+      213: 3102233724368923461
+    second: Text Input box_25
+  - first:
+      213: -8039688883844203892
+    second: Text Input box_26
+  - first:
+      213: 8627402820379865944
+    second: Text Input box_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Text Input box_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf1053d103155c20800000000000000
+      internalID: 3194480409250373555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef6c3840dc3cae70800000000000000
+      internalID: 9127737410035937256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51da751e7ff802dd0800000000000000
+      internalID: -2512850297272423147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb33badd036e1ef0800000000000000
+      internalID: -135562027619632153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd4f4d8d113823c0800000000000000
+      internalID: -4384200234250580557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc34b96ea82c228e0800000000000000
+      internalID: -1719598205871897653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 93
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b756baaedc50a9a20800000000000000
+      internalID: 3069772477969950075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf2925ff6d96bcc0800000000000000
+      internalID: -3695593340030865461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_8
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1041d6ad1cc130000800000000000000
+      internalID: 876043848979457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_9
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5c2fc63bbf74040800000000000000
+      internalID: 4631947489819411956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_10
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174a5f98abfc2f510800000000000000
+      internalID: 1581554819245909105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_11
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 97
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b66e986b6fc87f80800000000000000
+      internalID: -8108503068856916295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_12
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 89
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3622dc58a1e404570800000000000000
+      internalID: 8448838776767980131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 40
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778eb2db7d1c01aa0800000000000000
+      internalID: -6192236355298531209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_14
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 40
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0846bafccf9434780800000000000000
+      internalID: -8700028704984963968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac38fe85cc85fbfc0800000000000000
+      internalID: -3476962752618069046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bccf58584477b040800000000000000
+      internalID: 4663323793234578617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_17
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a3146614a6ef850800000000000000
+      internalID: 6412679748543134251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_18
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b5ec9bd22fafed0800000000000000
+      internalID: -2379323174907126945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89058f4a50f95eee0800000000000000
+      internalID: -1232404076424572776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_20
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c356903e5c77aa8f0800000000000000
+      internalID: -528478314461305540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_21
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd93a2398336a4570800000000000000
+      internalID: 8451676745352493531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_22
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7003877126826d0f0800000000000000
+      internalID: -1092641457825107961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_23
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010a3e81fc4ff35e0800000000000000
+      internalID: -1927552945178304496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_24
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd1de7759f0f1960800000000000000
+      internalID: 7574790232897035766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_25
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b2f3fc2295d0b20800000000000000
+      internalID: 3102233724368923461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_26
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 4
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a3fc56e894d6090800000000000000
+      internalID: -8039688883844203892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Input box_27
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853f1fab721bab770800000000000000
+      internalID: 8627402820379865944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Text Input box_0: 3194480409250373555
+      Text Input box_1: 9127737410035937256
+      Text Input box_10: 1581554819245909105
+      Text Input box_11: -8108503068856916295
+      Text Input box_12: 8448838776767980131
+      Text Input box_13: -6192236355298531209
+      Text Input box_14: -8700028704984963968
+      Text Input box_15: -3476962752618069046
+      Text Input box_16: 4663323793234578617
+      Text Input box_17: 6412679748543134251
+      Text Input box_18: -2379323174907126945
+      Text Input box_19: -1232404076424572776
+      Text Input box_2: -2512850297272423147
+      Text Input box_20: -528478314461305540
+      Text Input box_21: 8451676745352493531
+      Text Input box_22: -1092641457825107961
+      Text Input box_23: -1927552945178304496
+      Text Input box_24: 7574790232897035766
+      Text Input box_25: 3102233724368923461
+      Text Input box_26: -8039688883844203892
+      Text Input box_27: 8627402820379865944
+      Text Input box_3: -135562027619632153
+      Text Input box_4: -4384200234250580557
+      Text Input box_5: -1719598205871897653
+      Text Input box_6: 3069772477969950075
+      Text Input box_7: -3695593340030865461
+      Text Input box_8: 876043848979457
+      Text Input box_9: 4631947489819411956
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
