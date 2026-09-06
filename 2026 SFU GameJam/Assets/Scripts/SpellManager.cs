@@ -79,7 +79,7 @@ public class SpellManager : MonoBehaviour
     }
     void Thump()
     {
-        Debug.Log("casted THUMP at " + spellPos);
+        StartCoroutine(SpawnThump(mouseLoc()));
         checkSpell.isThump = false;
         checkSpell.ChangeToBlack();
     }
@@ -102,6 +102,17 @@ public class SpellManager : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
         Destroy(aoe);
         GameObject abil = Instantiate(slashAbility, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.7f);
+        Destroy(abil);
+    }
+    IEnumerator SpawnThump(Vector2 roundPos)
+    {
+        GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.8f);
+        Destroy(aoe);
+        GameObject abil = Instantiate(thumpAbility, roundPos, Quaternion.identity);
 
         yield return new WaitForSeconds(0.7f);
         Destroy(abil);

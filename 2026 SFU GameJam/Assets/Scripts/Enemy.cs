@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public bool isZapped = false;
     public bool isWhooshed = false;
 
+    GameObject immText;
     Rigidbody2D myRigid;
     Animator anim;
     SpriteRenderer spriter;
@@ -20,6 +21,7 @@ public class Enemy : MonoBehaviour
         myRigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        immText = transform.Find("immuneText").gameObject;
     }
 
     void FixedUpdate()
@@ -67,8 +69,28 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator ZapRoutine()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3.5f);
         spriter.color = new Color(1, 1, 1, 1);
         isZapped = false;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("zap") && !collision.CompareTag("whoosh"))
+        {
+
+            StartCoroutine(textAppear());
+
+        }
+    }
+
+    IEnumerator textAppear()
+    {
+        immText.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+
+        immText.SetActive(false);
+
+    }
+
 }
