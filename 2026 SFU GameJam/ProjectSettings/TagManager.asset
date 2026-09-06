@@ -9,6 +9,7 @@ TagManager:
   - slash
   - boom
   - zap
+  - whoosh
   layers:
   - Default
   - TransparentFX
