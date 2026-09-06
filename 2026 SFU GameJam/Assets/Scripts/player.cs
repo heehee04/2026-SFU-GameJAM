@@ -13,5 +13,15 @@ public class player : MonoBehaviour
         hearts.RemoveAt(0);
         Destroy(collision.gameObject);
 
+        Debug.Log(manager.instance.health);
+        manager.instance.health--;
+    }
+
+    private void Update()
+    {
+        if (manager.instance.health <= 0)
+        {
+            //Gameover screen
+        }
     }
 }

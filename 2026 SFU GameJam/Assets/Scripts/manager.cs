@@ -7,7 +7,7 @@ public class manager : MonoBehaviour
     public float gameTime;
     public mobPool pool;
     public player player;
-
+    public float health = 3f;
     void Awake()
     {
         instance = this;
