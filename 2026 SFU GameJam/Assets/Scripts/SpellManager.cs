@@ -51,26 +51,31 @@ public class SpellManager : MonoBehaviour
     {
         StartCoroutine(SpawnAbility(mouseLoc()));
         checkSpell.isBoom = false;
+        checkSpell.ChangeToBlack();
     }
     void Slash()
     {
         Debug.Log("casted SLASH at " + spellPos);
         checkSpell.isSlash = false;
+        checkSpell.ChangeToBlack();
     }
     void Zap()
     {
         Debug.Log("casted ZAP at " + spellPos);
         checkSpell.isZap = false;
+        checkSpell.ChangeToBlack();
     }
     void Whoosh()
     {
         Debug.Log("casted WHOOSH at " + spellPos);
         checkSpell.isWhoosh = false;
+        checkSpell.ChangeToBlack();
     }
     void Thump()
     {
         Debug.Log("casted THUMP at " + spellPos);
         checkSpell.isThump = false;
+        checkSpell.ChangeToBlack();
     }
 
     IEnumerator SpawnAbility(Vector2 roundPos)

@@ -1,20 +1,28 @@
 using System;
+using System.Collections;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UIElements;
+using UnityEngine.VFX;
 
 public class TextInput : MonoBehaviour
 {
+    [SerializeField] public TMP_Text myTMP;
+    
     private string text;
+
+    public Boolean wordIsCorrect;
+
     public Boolean isBoom;
     public Boolean isSlash;
     public Boolean isZap;
     public Boolean isWhoosh;
     public Boolean isThump;
 
+    string[] correctWords = { "boom", "bam", "pow", "slash", "shing", "zap", "whoosh", "woosh", "thump", "wham", "wam", "slam"};
     string[] booms = { "boom", "bam", "pow" };
-    
     string[] slashes = { "slash", "shing" };
     string[] zaps = { "zap" };
     string[] whooshes = { "whoosh", "woosh" };
@@ -70,26 +78,35 @@ public class TextInput : MonoBehaviour
                 break;
             }
         }
+    }
 
-        //if (isBoom == true)
-        //{
-        //    Debug.Log("casted BOOM");
-        //}
-        //if (isSlash == true)
-        //{
-        //    Debug.Log("casted SLASH");
-        //}
-        //if (isZap == true)
-        //{
-        //    Debug.Log("casted ZAP");
-        //}
-        //if (isWhoosh == true)
-        //{
-        //    Debug.Log("casted WHOOSH");
-        //}
-        //if (isThump == true)
-        //{
-        //    Debug.Log("casted THUMP");
-        //}
+    public void CorrectWord(string s)
+    {
+        text = s;
+
+        foreach (string word in correctWords)
+        {
+            if(string.Equals(word, text, StringComparison.OrdinalIgnoreCase))
+            {
+                wordIsCorrect = true;
+                ChangeToGreen();
+                break;
+            }
+        }
+    }
+
+    public void ChangeToGreen()
+    {
+        myTMP.color = Color.green;
+    }
+
+    public void ChangeToBlack()
+    {
+        myTMP.color = Color.black;
+    }
+
+    public void ResetText()
+    {
+        myTMP.text = "";
     }
 }
