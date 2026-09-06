@@ -1413,8 +1413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb80efefbfcd58349a07d0aea3d20ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::abilityTest
-  ability: {fileID: 3202017787095876613, guid: a0ffb98a8505afe43b3e316c1546e269, type: 3}
-  range: {fileID: 4687998416609339613, guid: 7798a23a77305114b89a5e98b85d4877, type: 3}
+  ability: {fileID: 8595955679916514148, guid: bfe0d0999b680134182d0c9d768a6b66, type: 3}
+  range: {fileID: 4050885137987118750, guid: bc9cd108795333b47bb929b7ded7f52b, type: 3}
 --- !u!61 &1240695897
 BoxCollider2D:
   m_ObjectHideFlags: 0

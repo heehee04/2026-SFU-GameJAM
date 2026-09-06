@@ -21,11 +21,11 @@ public class abilityTest : MonoBehaviour
     {
         GameObject aoe = Instantiate(range, roundPos, Quaternion.identity);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.7f);
         Destroy(aoe);
         GameObject abil = Instantiate(ability, roundPos, Quaternion.identity);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.7f);
         Destroy(abil);
 
     }
