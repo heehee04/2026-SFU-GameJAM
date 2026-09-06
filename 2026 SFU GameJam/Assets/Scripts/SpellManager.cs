@@ -54,6 +54,7 @@ public class SpellManager : MonoBehaviour
     void Boom()
     {
         StartCoroutine(SpawnBoom(mouseLoc()));
+        SoundManager.Instance.Play(SoundManager.SoundType.Boom);
         checkSpell.isBoom = false;
         checkSpell.ChangeToBlack();
         checkSpell.ResetText();
@@ -61,22 +62,18 @@ public class SpellManager : MonoBehaviour
     void Slash()
     {
         StartCoroutine(SpawnSlash(mouseLoc()));
-        Debug.Log("casted SLASH at " + spellPos);
         checkSpell.isSlash = false;
         checkSpell.ChangeToBlack();
     }
     void Zap()
     {
         StartCoroutine(SpawnZap(mouseLoc()));
-        Debug.Log("casted ZAP at " + spellPos);
         checkSpell.isZap = false;
         checkSpell.ChangeToBlack();
     }
     void Whoosh()
     {
         StartCoroutine(SpawnWhoosh(spellPos, 1));
-
-        Debug.Log("casted WHOOSH at " + spellPos);
         checkSpell.isWhoosh = false;
         checkSpell.ChangeToBlack();
     }
@@ -102,7 +99,7 @@ public class SpellManager : MonoBehaviour
     {
         GameObject aoe = Instantiate(Range, roundPos, Quaternion.identity);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         Destroy(aoe);
         GameObject abil = Instantiate(slashAbility, roundPos, Quaternion.identity);
 
