@@ -8,6 +8,7 @@ public class manager : MonoBehaviour
     public mobPool pool;
     public player player;
     public float health = 3f;
+    public float points = 0f;
     void Awake()
     {
         instance = this;
