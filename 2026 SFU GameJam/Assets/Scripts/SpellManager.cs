@@ -24,7 +24,16 @@ public class SpellManager : MonoBehaviour
         {
             return;
         }
+
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(spellPos, damageRadius); 
         
+        foreach (Collider2D enemy in enemies) 
+        {
+            if (enemy.CompareTag("Boom"))
+            {
+                Destroy(enemy);
+            }
+        }
     }
     void Slash()
     {
