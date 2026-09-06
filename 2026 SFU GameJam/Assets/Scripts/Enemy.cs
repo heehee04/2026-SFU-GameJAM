@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -7,6 +8,7 @@ public class Enemy : MonoBehaviour
     public RuntimeAnimatorController[] animCon;
 
     bool isAlive;
+    public bool isZapped = false;
 
     Rigidbody2D myRigid;
     Animator anim;
@@ -22,8 +24,9 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (!isAlive)
+        if (!isAlive || isZapped)
         {
+            myRigid.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -52,5 +55,19 @@ public class Enemy : MonoBehaviour
         speed = data.speed;
         gameObject.tag = data.element;
 
+    }
+    public void ZapEnemy()
+    {
+        Debug.Log("zapped");
+        isZapped = true;
+        spriter.color = new Color(0.3f, 0.3f, 1, 1);
+        StartCoroutine(ZapRoutine());
+    }
+
+    private IEnumerator ZapRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        spriter.color = new Color(1, 1, 1, 1);
+        isZapped = false;
     }
 }

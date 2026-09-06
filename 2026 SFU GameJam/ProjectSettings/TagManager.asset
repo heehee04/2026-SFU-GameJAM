@@ -8,6 +8,7 @@ TagManager:
   - thump
   - slash
   - boom
+  - zap
   layers:
   - Default
   - TransparentFX
