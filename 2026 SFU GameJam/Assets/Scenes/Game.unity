@@ -977,6 +977,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637063945b803744abaf4d8479fa9dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextInput
+  isBoom: 0
+  isSlash: 0
+  isZap: 0
+  isWhoosh: 0
+  isThump: 0
 --- !u!50 &952841301
 Rigidbody2D:
   serializedVersion: 5
@@ -1280,6 +1285,12 @@ MonoBehaviour:
   - spriteType: 1
     speed: 1
     element: fire
+  - spriteType: 2
+    speed: 1
+    element: leaf
+  - spriteType: 3
+    speed: 1
+    element: earth
   spawnTime: 1
 --- !u!1 &1334465216
 GameObject:
