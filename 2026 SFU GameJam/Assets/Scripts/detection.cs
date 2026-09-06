@@ -7,6 +7,7 @@ public class detection : MonoBehaviour
         if (collision.CompareTag("general") && !gameObject.CompareTag("zap") && !gameObject.CompareTag("whoosh"))
         {
             Destroy(collision.gameObject);
+            ScoreKeeper.instance.AddP(1);
         }
         if (gameObject.CompareTag("zap"))
         {
@@ -20,14 +21,19 @@ public class detection : MonoBehaviour
         if (collision.CompareTag("slash") && gameObject.CompareTag("slash"))
         {
             Destroy(collision.gameObject);
+            ScoreKeeper.instance.AddP(1);
         }
         if (collision.CompareTag("boom") && gameObject.CompareTag("boom"))
         {
             Destroy(collision.gameObject);
+            ScoreKeeper.instance.AddP(1);
+
         }
         if (collision.CompareTag("thump") && gameObject.CompareTag("thump"))
         {
             Destroy(collision.gameObject);
+            ScoreKeeper.instance.AddP(1);
+
         }
     }
 }
