@@ -74,10 +74,8 @@ public class SpellManager : MonoBehaviour
     }
     void Whoosh()
     {
-        Vector3 initialScale = new Vector3(0.5f, 0.5f, 0.5f);
-        Vector3 finalScale = new Vector3(5, 5, 5);
+        StartCoroutine(SpawnWhoosh(spellPos, 1));
 
-        StartCoroutine(SpawnWhoosh(spellPos, 1.5f));
         Debug.Log("casted WHOOSH at " + spellPos);
         checkSpell.isWhoosh = false;
         checkSpell.ChangeToBlack();
@@ -127,7 +125,18 @@ public class SpellManager : MonoBehaviour
     IEnumerator SpawnWhoosh(Vector2 roundPos, float time)
     {
         GameObject abil = Instantiate(whooshAbility, roundPos, Quaternion.identity);
-        yield return new WaitForSeconds(1.5f);
+
+        Vector3 initialScale = abil.transform.localScale;
+        Vector3 finalScale = new Vector3(8, 8, 8);
+        float currentTime = 0.0f;
+
+        do
+        {
+            abil.transform.localScale = Vector3.Lerp(initialScale, finalScale, time);
+            currentTime += Time.deltaTime;
+            yield return null;
+        } while (currentTime <= time);
+
         Destroy(abil);
     }
 }
